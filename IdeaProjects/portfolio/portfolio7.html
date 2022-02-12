@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="" alt="">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+            <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+            <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="intro">
+    <h1 class="section__title section__title--intro">
+        <strong>Predict Stock Market<br> Using Sequence model</strong>
+    </h1>
+    <img src="https://camo.githubusercontent.com/f0b103e34ff92ba26ce5188e9f2f9c190318ea68aaae1e7f1e08cf55f54fe1e2/68747470733a2f2f736f6369616c6966792e6769742e63692f737576613030372f73657175656e63652d6d6f64656c2f696d6167653f6465736372697074696f6e3d3126666f6e743d526f6b6b697474266c616e67756167653d31266e616d653d31266f776e65723d31267061747465726e3d43697263756974253230426f617264267468656d653d4461726b" alt="" class="intro__img">
+    <p class="section__subtitle section__subtitle--intro">Sequence Models, Yahoo-Finance-Api, Pandas</p>
+</section>
+
+<div class="portfolio-item-individual">
+    <h3>Intro<p></p></h3>
+    <li>Schematically, a RNN layer uses a for loop to iterate over the timesteps of a sequence, while maintaining an internal state that encodes information about the timesteps it has seen so far.</li>
+    <li>Here is a simple example of a Sequential model that processes sequences of float data, embeds each float data into a (60,1)-dimensional vector, then processes the sequence of vectors using LSTM/GRU layers.</li>
+    <h3><p></p>Input<p></p></h3>
+    <a href="https://github.com/suva007/sequence-model" class="portfolio__item">
+        <img src="https://user-images.githubusercontent.com/38084433/148694701-58b13177-123a-4441-8e77-cdaa64d84871.png" alt="">
+    </a>
+    <h3><p></p>Results<p></p></h3>
+    <li>RMSE = 87.77460158447597</li>
+    <a href="https://github.com/suva007/sequence-model" class="portfolio__item">
+        <img src="https://user-images.githubusercontent.com/38084433/148694579-25f456b3-f1b0-4178-9449-50345703e735.png" alt="">
+        <img src="https://user-images.githubusercontent.com/38084433/148694597-4a916af3-55bf-4ef2-8401-1ae84aa25e39.png" alt="">
+    </a>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <a href="mailto:suvansharora07@gmail.com" class="footer__link">Mail@suvansh</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/suvansh-arora/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/arorasuvansh">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/suva007">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

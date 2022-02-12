@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portion Watermarking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="" alt="">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+            <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+            <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<section class="intro">
+    <h1 class="section__title section__title--intro">
+        <strong>Security Enhancement <br>Using Image Watermarking</strong>
+    </h1>
+    <img src="https://camo.githubusercontent.com/95ec6fe6719a2841b14651f65c4ef62ed0f4e3af8fcb4b19fa66487844d6f97f/68747470733a2f2f736f6369616c6966792e6769742e63692f737576613030372f506f7274696f6e2d57617465726d61726b696e672f696d6167653f6465736372697074696f6e3d31266465736372697074696f6e4564697461626c653d5365637572697479253230456e68616e63656d656e742532305573696e67253230436f6d62696e65642532304443542d4457542532304469676974616c253230496d61676525323057617465726d61726b696e67253230546563686e6971756526666f6e743d426974746572266c616e67756167653d31266e616d653d31266f776e65723d31267061747465726e3d466c6f6174696e67253230436f6773267468656d653d4461726b" alt="" class="intro__img">
+    <p class="section__subtitle section__subtitle--intro">DCT, DWT, Digital Image Watermarking</p>
+</section>
+
+<div class="portfolio-item-individual">
+    <h3>Intro<p></p></h3>
+    <li>The snowballing of digitisation due to rapid growth in internet and computer technologies , image authentication and image restoration in case of any attack is one of the major factors in today’s environment. Digital watermarking is one such saviour that has been developed to protect digital images from illegal manipulations.</li>
+    <li>A combined approach of DCT-DWT based image watermarking is put forward in this paper that effectively enhances the image restoration and authentication capability.</li>
+    <a href="https://github.com/suva007/Portion-Watermarking" class="portfolio__item">
+    </a>
+    <h3><p></p>Methodology used<p></p></h3>
+    <a href="https://github.com/suva007/Portion-Watermarking" class="portfolio__item">
+        <img src="https://user-images.githubusercontent.com/38084433/148693719-83d8adf3-a759-4381-9728-23c7e3345ba0.png" alt="">
+    </a>
+    <h3><p></p>DWT Based Image breakDown<p></p></h3>
+    <a href="https://github.com/suva007/Portion-Watermarking" class="portfolio__item">
+        <img src="https://user-images.githubusercontent.com/38084433/148693820-f2bb7978-8014-4055-b30b-26b6271c56fb.png" alt="">
+    </a>
+    <h3><p></p>Combined DCT-DWT Algorithm [EMBEDDING]<p></p></h3>
+    <li>Apply DWT onto each portion of cover image to give non-overlapping bands LL1,HL1,LH1and HH1.</li>
+    <li>Apply DWT now on the either of sub-band amongst HH1 or HL1 as depicted in above figure for LL1.</li>
+    <li>Divide sub-band HH2 or HL2 into 4 * 4 blocks.</li>
+    <li>Apply DCT to each of these blocks now .</li>
+    <li>Embedding of watermark will be done in the mid sub-band coefficients fetched out of DCT and a scale factor we need to define in order to decide the perceptibility of watermark post embedding.<strong>mid_coeff’=mid_coeff (+/-) ALPHA * watermark</strong></li>
+    <li>Apply inverse operation of DCT [IDCT] to after embedding the mid sub-band coefficients based on above formula </li>
+    <li>Apply IDWT on this transformed image, include modified sub-bands , to produce the watermarked host image.</li>
+    <li>Convert the watermarked Image now into complete image portion by portion .</li>
+    <h3><p></p>EXTRACTION [Blind water marking - therefore host image not needed for this].<p></p></h3>
+    <li>Combine and convert back portions using inverse spiral of matrix in each portion.</li>
+    <li>Apply DWT to this watermarked Image which may be altered or unaltered.</li>
+    <li>Apply DWT in (HL1 to form four frequency sub-bands)</li>
+    <li>Divide sub-bands like step 3 in embedding into 4*4 blocks.</li>
+    <li>DCT will be applied now to chosen sub-band and take out the mid-band coefficients for each DCT transformed 4*4 block.</li>
+    <li>Regenerate watermark pattern , this will help in comparing the original watermark with the current coefficients and will help in tamper localisation.</li>
+    <li>For each block in the sub-band (HL2 or HH2), calculate the correlation between the mid-band coefficients and generated pattern from previous step. Based on correlation mark each of this watermarking bits [this will be based on whether the watermarking image is RGB or GRAY ], after remaking the watermark time to compare both original and extracted for tamper localisation and authenticity.</li>
+    <li>Reconstruct the watermark using the extracted watermark bits, and compute the dis-similarity between the original and extracted watermarks.</li>
+    <h3><p></p>Result Evaluation<p></p></h3>
+    <li><strong>Proposed Algo</strong><p></p>PSNR = 100
+        Perceptibility * fragility = high.
+        Solves Drawbacks of both
+        Image quality after embedding = high , But not as good as original.
+        Robustness = High</li>
+    <li><strong>DCT</strong><p></p>PSNR = 41.4 MSE = 0.67
+        While transmission can be easily altered and attacked can get to know the type of information being transmitted.
+        Perceptibility * fragility = medium.
+        Not suitable for image contains almost same intensities or pixel values.
+        Robustness and image quality after embedding = medium.</li>
+    <li><strong>DWT</strong><p></p>PSNR=27.46 MSE=17.45
+        While transmission can be easily altered and attacked can get to know the type of information being transmitted.
+        Perceptibility * fragility = medium.
+        Robustness and Image quality = low.</li>
+
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <a href="mailto:suvansharora07@gmail.com" class="footer__link">Mail@suvansh</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/suvansh-arora/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/arorasuvansh">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/suva007">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
