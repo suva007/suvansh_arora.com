@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvansh Arora Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="" alt="">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+            <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Introduction -->
+<section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Suvansh Arora</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Software Developer</p>
+    <img src="img/suvansh.jpg" alt="a picture of Suvansh Arora smiling" class="intro__img">
+</section>
+
+
+<!-- My services -->
+<section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Design</h3>
+            <p>Designed User Interface using applet AWT swing using java in an internship at a hospital resulting in a Hospital management System which helps to digitize the patient records, doctor records, medicines, prescriptions etc. </p>
+        </div> <!-- / service -->
+
+        <div class="service">
+            <h3>Development</h3>
+            <p>I hold the experience of backend development with Dell EMC, being involved in multiple projects like SDK, LHOTSE, POWERSCALE etc.</p>
+        </div> <!-- / service -->
+
+        <div class="service">
+            <h3>Research</h3>
+            <p>1.Modified agglomerative clustering algorithm for one of the industrial project to cluster similar engineering drawing images, and classifying disoriented images using CNN
+                <br>2. Introduced watermarking algorithm combined with DCT-DWT based, that detects and tells whether a particular image has been altered or not.</p>
+        </div> <!-- / service -->
+    </div> <!-- / services -->
+
+    <a href="#work" class="btn">My Work</a>
+</section>
+
+
+<!-- About me -->
+<section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about">Designer & developer based out of Bangalore</p>
+
+    <div class="about-me__body">
+        <p>I am a technology driven enthusiast inclined towards software development and research. To elaborate a little more about myself, I am currently pursuing my masters course in Computer Science Engineering from the Indian Institute of Information Technology , Jabalpur. I hold the experience of working closely with DELL EMC as a graduate software development intern.</p>
+        <p>My favourite programming languages include Python, C++. Speaking of technologies, I have worked and developed projects on Machine Learning, REST API’s, Digital watermarking, Mock Servers. </p>
+        <p>I aspire to excel in the software development field and develop my skills in order to solve real life problems using my knowledge of computers.</p>
+    </div>
+
+    <img  alt="" class="about-me__img">
+</section>
+
+<!-- My Work -->
+<section class="my-work" id="work">
+    <h2 class="section__title section__title--work">My work</h2>
+    <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+    <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="portfolio-item.html" class="portfolio__item">
+            <img src="img/image-clustering@2x.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="portfolio2.html" class="portfolio__item">
+            <img src="img/hospital2.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="portfolio3.html" class="portfolio__item">
+            <img src="img/vector.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="portfolio4.html" class="portfolio__item">
+            <img src="img/S-AES.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <a href="portfolio5.html" class="portfolio__item">
+            <img src="img/hog.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 06 -->
+        <a href="portfolio6.html" class="portfolio__item">
+            <img src="img/water.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 07 -->
+        <a href="portfolio7.html" class="portfolio__item">
+            <img src="img/sequence.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 08 -->
+        <a href="portfolio8.html" class="portfolio__item">
+            <img src="img/reconstruction.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 09 -->
+        <a href="portfolio9.html" class="portfolio__item">
+            <img src="img/DS.png" alt="" class="portfolio__img">
+        </a>
+
+        <!-- Portfolio item 0 0-->
+        <a href="portfolio10.html" class="portfolio__item">
+            <img src="img/stitch.png" alt="" class="portfolio__img">
+        </a>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <a href="mailto:suvansharora07@gmail.com" class="footer__link">Mail@suvansh</a>
+    <ul class="social-list">
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/suvansh-arora/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://www.instagram.com/arorasuvansh">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/suva007">
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>

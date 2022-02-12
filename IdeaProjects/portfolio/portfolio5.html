@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Detection</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+  <!-- Update these with your own fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header>
+  <div class="logo">
+    <img src="" alt="">
+  </div>
+  <button class="nav-toggle" aria-label="toggle navigation">
+    <span class="hamburger"></span>
+  </button>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+      <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+      <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+      <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="intro">
+  <h1 class="section__title section__title--intro">
+    <strong>Vehicle Detection <br> using HOG</strong>
+  </h1>
+  <img src="https://camo.githubusercontent.com/554f80e0386c4ec98781464f87802e378b387d2b82d89c435d8ef5c5d9581698/68747470733a2f2f736f6369616c6966792e6769742e63692f737576613030372f686f672d64657363726970746f722d666f722d76656869636c652d646574656374696f6e2f696d6167653f6465736372697074696f6e3d31266465736372697074696f6e4564697461626c653d446574656374696e6725323076656869636c65732532306f6e253230726f61642532307573696e67253230686f67253230616e6425323053564d25323025354273696d706c657374253230617070726f6163682535442e26666f6e743d426974746572267061747465726e3d43697263756974253230426f617264267468656d653d4461726b" alt="" class="intro__img">
+  <p class="section__subtitle section__subtitle--intro">HOG, Sliding Window, CV2, Vehicle Detection, HOG</p>
+</section>
+
+<div class="portfolio-item-individual">
+  <h3>Intro<p></p></h3>
+  <li>In this section, we will take a look at one such feature extraction technique, the The Histogram of oriented Gradients , which transforms image pixels into a vector representation that is sensitive to broadly informative image features regardless of confounding factors like illumination. We will use these features to develop a simple vehicle detection pipeline, using machine learning algorithms .</li>
+  <a href="https://github.com/suva007/hog-descriptor-for-vehicle-detection" class="portfolio__item">
+  </a>
+  <h3><p></p>Reading all Vehicle images and converting them to Grayscale<p></p></h3>
+  <a href="https://github.com/suva007/hog-descriptor-for-vehicle-detection" class="portfolio__item">
+    <img src="https://user-images.githubusercontent.com/38084433/148696864-a1b618cb-fa01-4f1b-97b5-a29bc3746a05.png" alt="">
+  </a>
+  <h3><p></p>Visualization of HOG features<p></p></h3>
+  <a href="https://github.com/suva007/hog-descriptor-for-vehicle-detection" class="portfolio__item">
+    <img src="https://user-images.githubusercontent.com/38084433/148696872-e00b0ab3-d644-46ee-b616-8f54b01c95d0.png" alt="">
+  </a>
+  <h3><p></p>Train Linear SVM<p></p></h3>
+  <li>Obtain a set of image thumbnails of Vehicles to constitute "positive" training samples.</li>
+  <li>Obtain a set of image thumbnails of non-Vehicles to constitute "negative" training samples.</li>
+  <li>Extract HOG features from these training samples.</li>
+  <li>Train a linear SVM classifier on these samples.</li>
+  <a href="https://github.com/suva007/hog-descriptor-for-vehicle-detection" class="portfolio__item">
+    <img src="https://user-images.githubusercontent.com/38084433/148696915-00efa25c-a651-439c-a1eb-93141ff8b28e.png" alt="">
+  </a>
+  <h3><p></p>Test<p></p></h3>
+  <a href="https://github.com/suva007/hog-descriptor-for-vehicle-detection" class="portfolio__item">
+    <img src="https://user-images.githubusercontent.com/38084433/148696935-6735d31e-fa82-4bca-9b4e-662314a76fb0.png" alt="">
+  </a>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <a href="mailto:suvansharora07@gmail.com" class="footer__link">Mail@suvansh</a>
+  <ul class="social-list">
+    <li class="social-list__item">
+      <a class="social-list__link" href="https://www.linkedin.com/in/suvansh-arora/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a class="social-list__link" href="https://www.instagram.com/arorasuvansh">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a class="social-list__link" href="https://github.com/suva007">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  </ul>
+</footer>
+
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
