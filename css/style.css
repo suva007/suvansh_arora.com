@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -37,7 +35,6 @@
 
 /* General styles */
 
-/* endable this to add smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
@@ -234,11 +231,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -419,7 +411,7 @@ header {
 }
 .my-work1 {
     background-color: var(--clr-dark);
-    background-image: url(../img/books.jpg);
+    /*background-image: url(../img/books.jpg);*/
     background-size: cover;
     color: var(--clr-light);
     text-align: center;
@@ -460,7 +452,7 @@ header {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .footer a {
