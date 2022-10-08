@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&dirsplay=swap');
 *,
 *::before,
 *::after {
@@ -419,6 +420,8 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    /* background-color: transparent; */
 }
 
 .portfolio__item {
@@ -639,7 +642,6 @@ i {
         width:100%;
     }
 }
-}
 .content-skills {
     font-size: 12px;
     padding:0;
@@ -656,8 +658,6 @@ li {
     margin: 3px 2px;
     text-align: center;
     flex-grow: 1;
-}
-}
 }
 .cd-timeline-content:after {
     content: "";
@@ -746,5 +746,27 @@ li {
         left: auto;
         right: 122%;
         text-align: right;
+    }
+}
+/* Skills */
+#SKILLS{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+#SKILLS h3{
+    /* font-weight: bold; */
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#SKILLS img{
+    max-width: 100px;
+}
+@media only screen and (max-width:300px) {
+    #SKILLS img{
+        max-width: 70px;
+    }  
+    h1 {
+        font-size: 25px;
     }
 }
